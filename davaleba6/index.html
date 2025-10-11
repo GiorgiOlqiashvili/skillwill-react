@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive JS App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>ინტერაქტიული დავალება 🎯</h1>
+    <p>ეს არის მცირე პრაქტიკული პროექტი JavaScript-ისთვის</p>
+  </header>
+
+  <main>
+    <!-- მოდალის ღილაკი -->
+    <section class="section">
+      <h2>🪟 მოდალი</h2>
+      <button id="openModalBtn" class="main-btn">მოდალის გახსნა</button>
+    </section>
+
+    <!-- ფერის შეცვლა -->
+    <section class="section">
+      <h2>🎨 ფონის ფერის შეცვლა</h2>
+      <div class="color-changer">
+        <input type="text" id="colorInput" placeholder="ჩაწერე ფერი (red, blue, green, black, white)">
+        <button id="colorBtn" class="main-btn">შეცვლა</button>
+      </div>
+    </section>
+
+    <!-- საშუალო რიცხვის გამოთვლა -->
+    <section class="section">
+      <h2>🔢 საშუალო რიცხვის გამოთვლა</h2>
+      <div class="average-calc">
+        <input type="text" id="numbersInput" placeholder="მაგ: 1:2:3:4:5">
+        <button id="avgBtn" class="main-btn">average</button>
+      </div>
+      <p id="result"></p>
+    </section>
+  </main>
+
+  <!-- მოდალი -->
+  <div id="modalOverlay" class="hidden">
+    <div id="modal">
+      <h3>გამარჯობა!</h3>
+      <p>ეს არის მარტივი მოდალის მაგალითი 🚀</p>
+      <button id="closeModalBtn" class="main-btn close-btn">დახურვა</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>დამზადებულია — JS პრაქტიკული პროექტისთვის © 2025</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
